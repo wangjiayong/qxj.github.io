@@ -90,7 +90,7 @@ function getTimeByUtc (time,isTimeStemp ) {
     let day = (date.getDate() + 1) < 10 ? date.getDate() : date.getDate()
     return `${year},${month},${day}`
 }
-// console.log(getTimeByUtc(new Date()))
+var together=getTimeByUtc(new Date())
 if (!document.createElement('canvas').getContext) {
 	var msg = document.createElement("div");
 	msg.id = "errorMsg";
@@ -104,9 +104,9 @@ if (!document.createElement('canvas').getContext) {
 	setTimeout(function () {
 		startHeartAnimation();
 	}, 1000);
-	timeElapse(getTimeByUtc(new Date()));
+	timeElapse('2018,8,9');
 	setInterval(function () {
-		timeElapse(getTimeByUtc(new Date()));
+		timeElapse('2018,8,9');
 	}, 500);
 
 	adjustCodePosition();
