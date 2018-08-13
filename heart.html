@@ -5,12 +5,16 @@
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui"> -->
 
 <title>呀哈，哦呦呵</title>
-<embed src="mp3/lv.mp3" hidden="true" autostart="true" loop="true">
+<!-- <embed src="mp3/lv.mp3" hidden="true" autostart="true" loop="true"> -->
 <style type="text/css">
 @font-face {
 	font-family: digit;
 	src: url('digital-7_mono.ttf') format("truetype");
 }
+audio{
+             display: none;
+         }
+
 </style>
 
 <link href="css/default.css" type="text/css" rel="stylesheet">
@@ -21,7 +25,10 @@
 </head>
 
 <body>
-
+		<audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+		src="mp3/lv.mp3">
+	  你的浏览器版本太低，不支持audio标签
+</audio>
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
